@@ -31,9 +31,9 @@ if __name__ == "__main__":
         "--filelists",
         nargs="+",
         default=[
-            "filelists/vctk_audio_sid_text_test_filelist.txt",
-            "filelists/vctk_audio_sid_text_val_filelist.txt",
-            "filelists/vctk_audio_sid_text_train_filelist.txt",
+            "filelists/mio_test.txt",
+            "filelists/mio_val.txt",
+            "filelists/mio_train.txt",
         ],
     )
     parser.add_argument("--config", default="configs/vctk_base2.json", type=str)

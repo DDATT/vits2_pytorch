@@ -1,0 +1,30 @@
+DUMMY1/wavs/mio_53001.wav|Ah, fellow follower Shiki, welcome to the church.
+DUMMY1/wavs/cd_5003.wav|No, really.
+DUMMY1/wavs/mio_47001.wav|Not a sin. Heretic, no! My fellow followers, we must be forgiving!
+DUMMY1/wavs/mio_49001.wav|Not a sin. I am sure a few followers of the church
+DUMMY1/wavs/cd_36001.wav|in a serious way.
+DUMMY1/wavs/mio_23001.wav|Do not worry, laughing at a child is no sin in this scenario.
+DUMMY1/wavs/mio_10003.wav|Madison
+DUMMY1/wavs/cd_20002.wav|First of all, you are a huge clown.
+DUMMY1/wavs/mio_43001.wav|For that alone, you will be burned at the stake. For that alone.
+DUMMY1/wavs/cd_29002.wav|I think your voice is really lovely.
+DUMMY1/wavs/cd_32001.wav|It's really comforting and enjoyable.
+DUMMY1/wavs/cd_14001.wav|We've been walking for the past few hours anyway.
+DUMMY1/wavs/cd_3002.wav|was extra fun!
+DUMMY1/wavs/mio_17001.wav|Starting this year, but I couldn't come often because I slept.
+DUMMY1/wavs/mio_13003.wav|but do not regret your choices in the future.
+DUMMY1/wavs/cd_41001.wav|Everything that I do with you makes me feel so happy
+DUMMY1/wavs/cd_10002.wav|when I kept slipping on the skating rink.
+DUMMY1/wavs/cd_52001.wav|I just thought you were being nice to me or playing around. You know how you are.
+DUMMY1/wavs/mio_26001.wav|and you will be saved. Salvation will find you.
+DUMMY1/wavs/mio_6001.wav|As long as you do not steal anymore, you will be saved Do not worry
+DUMMY1/wavs/cd_24002.wav|You always check in on me to make sure that I'm okay.
+DUMMY1/wavs/cd_17003.wav|feel about you.
+DUMMY1/wavs/cd_6003.wav|I just know I would have spent another year alone.
+DUMMY1/wavs/cd_54003.wav|I just... wanna be like this.
+DUMMY1/wavs/cd_5001.wav|I'm so glad and thankful that you spent time with me today.
+DUMMY1/wavs/mio_33001.wav|I hope your foil kyogre was worth it, my dear lamb.
+DUMMY1/wavs/mio_45001.wav|Thank you. Thank you for respecting.
+DUMMY1/wavs/cd_19001.wav|Okay, fine, you're right. You asked first.
+DUMMY1/wavs/mio_13001.wav|Do not regret your choices!
+DUMMY1/wavs/cd_21002.wav|a massive loser, and a terrible friend.

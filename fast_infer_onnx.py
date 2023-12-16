@@ -1,36 +1,36 @@
 import argparse
-
 import numpy as np
 import onnxruntime
-import torch
 from scipy.io.wavfile import write
-
-import commons
 import utils
 from text import text_to_sequence
 
+def intersperse(lst, item):
+    result = [item] * (len(lst) * 2 + 1)
+    result[1::2] = lst
+    return result
 
 def get_text(text, hps):
     text_norm = text_to_sequence(text, hps.data.text_cleaners)
     if hps.data.add_blank:
-        text_norm = commons.intersperse(text_norm, 0)
-    text_norm = torch.LongTensor(text_norm)
+        text_norm = intersperse(text_norm, 0)
+    text_norm = np.array(text_norm, dtype=np.longlong)
     return text_norm
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", required=True, help="Path to model (.onnx)")
+    parser.add_argument("--model", required=True, help="pretrained/vits2.onnx")
     parser.add_argument(
-        "--config-path", required=True, help="Path to model config (.json)"
+        "--config-path", required=True, help="configs/vits2_ljs_nosdp.json"
     )
     parser.add_argument(
-        "--output-wav-path", required=True, help="Path to write WAV file"
+        "--output-wav-path", required=True, help="output audio wav path"
     )
-    parser.add_argument("--text", required=True, type=str, help="Text to synthesize")
+    parser.add_argument("--text", required=True, type=str, help="Home is your new landing page and surfaces your most relevant files and folders")
     parser.add_argument("--sid", required=False, type=int, help="Speaker ID to synthesize")
+    
     args = parser.parse_args()
-
     sess_options = onnxruntime.SessionOptions()
     model = onnxruntime.InferenceSession(str(args.model), sess_options=sess_options, providers=["CPUExecutionProvider"])
 
@@ -41,7 +41,7 @@ def main() -> None:
     text_lengths = np.array([text.shape[1]], dtype=np.int64)
     scales = np.array([0.667, 1.0, 0.8], dtype=np.float32)
     sid = np.array([int(args.sid)]) if args.sid is not None else None
-
+    
     audio = model.run(
         None,
         {
@@ -51,9 +51,9 @@ def main() -> None:
             "sid": sid,
         },
     )[0].squeeze((0, 1))
-
+    
     write(data=audio, rate=hps.data.sampling_rate, filename=args.output_wav_path)
-
+    print(time.time()-t1)
 
 if __name__ == "__main__":
     main()

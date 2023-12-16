@@ -10,8 +10,9 @@ if __name__ == "__main__":
         "--filelists",
         nargs="+",
         default=[
-            "filelists/ljs_audio_text_val_filelist.txt",
-            "filelists/ljs_audio_text_test_filelist.txt",
+            "filelists/train.txt",
+            "filelists/val.txt",
+            "filelists/test.txt",
         ],
     )
     parser.add_argument("--text_cleaners", nargs="+", default=["english_cleaners2"])

@@ -16,6 +16,9 @@ import re
 from unidecode import unidecode
 from phonemizer import phonemize
 from phonemizer.backend import EspeakBackend
+from phonemizer.backend.espeak.wrapper import EspeakWrapper
+EspeakWrapper.set_library('C:\Program Files\eSpeak NG\libespeak-ng.dll')
+
 backend = EspeakBackend("en-us", preserve_punctuation=True, with_stress=True)
 
 
